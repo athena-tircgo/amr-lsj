@@ -78,6 +78,7 @@ graph LR
         A10[4]:::node
         A11[8]:::node
         A12[12]:::node
+        A13[0]:::node
     end
 
     %% 橫向連線

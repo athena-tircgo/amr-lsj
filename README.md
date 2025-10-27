@@ -50,7 +50,7 @@ flowchart TD
 ```mermaid
 graph LR
     %% 樣式設定
-    classDef node fill:none,stroke:#aaa,stroke-width:1px,rx:5,ry:5;
+    classDef node fill:#fff,stroke:#555,stroke-width:1px,rx:5,ry:5;
 
     %% 第一欄
     subgraph col1[ ]
@@ -86,11 +86,6 @@ graph LR
     A2 --- A5 --- A8 --- A11
     A3 --- A6 --- A9 --- A12
 
-   %% 垂直線用透明節點
-    X1([ ]):::node
-    X2([ ]):::node
-
-    A1 --- X1 --- A2 --- X2 --- A3
 ```
 
 2.1 本場域共設置有12個工作站點以及一個充電站點。

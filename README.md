@@ -8,17 +8,40 @@
 
 ## 1. 總覽
 
-本規格書定義了規劃與運輸系統（PTS）與倉儲管理系統(WMS)之間的 HTTPS 通訊協定。倉儲管理系統(WMS)作為伺服器端，規劃與運輸系統(PTS)作為客戶端，透過WebAPI進行通訊，使用HTTPS協議傳輸JSON格式資料。
-<br>
-<br>
+本規格書定義AMR接受WMS派遣任務派送到達指定位置，人員將藥品放入，等訂單內物料都齊後，WMS 會派AMR 到包裝區等整個場區的運行規劃。
 
-- **通訊協定**：HTTPS
-- **傳輸格式**：JSON
-- **系統架構**：
-  - **WMS Server：** 倉儲管理系統伺服器，提供WebAPI服務。
-  - **PTS Client：** 規劃與運輸系統端，主動呼叫WMS系統API。
+<br>
+<br>
+  - **WMS Server：** 倉儲管理系統伺服器。
+  - **PTS Client：** 規劃與運輸系統端。
 
   - **系統架構圖：**
 
 <br>
 <br>
+
+```mermaid
+flowchart TD
+    %% 節點設定
+    style WMS fill:#f5f5dc,stroke:#333,stroke-width:2px,rx:7,ry:7
+    style PTS fill:#7fbf7f,stroke:#333,stroke-width:2px,rx:7,ry:7
+    style AMR1 fill:#a3d4f5,stroke:#333,stroke-width:2px,rx:7,ry:7
+    style AMR2 fill:#a3d4f5,stroke:#333,stroke-width:2px,rx:7,ry:7
+    style AMR3 fill:#a3d4f5,stroke:#333,stroke-width:2px,rx:7,ry:7
+    style AMR4 fill:#a3d4f5,stroke:#333,stroke-width:2px,rx:7,ry:7
+
+    %% 節點文字
+    WMS["WMS 系統"]
+    PTS["PTS 系統"]
+    AMR1["AMR_1"]
+    AMR2["AMR_2"]
+    AMR3["AMR_3"]
+    AMR4["AMR_4"]
+
+    %% 連線
+    WMS <-->PTS
+    PTS -->AMR1
+    PTS -->AMR2
+    PTS -->AMR3
+    PTS -->AMR4
+```

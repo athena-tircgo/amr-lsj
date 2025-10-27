@@ -49,31 +49,22 @@ flowchart TD
 
 ```mermaid
 graph LR
-    %% 第一欄
-    subgraph col1[ ]
-        A1[1]
-        A2[2]
-        A3[3]
-        A4[4]
+    %% 第一排
+    subgraph row1[ ]
+        A1[1] --- A2[2] --- A3[3] --- A4[4]
     end
 
-    %% 第二欄
-    subgraph col2[ ]
-        A5[5]
-        A6[6]
-        A7[7]
-        A8[8]
+    %% 第二排
+    subgraph row2[ ]
+        A5[5] --- A6[6] --- A7[7] --- A8[8]
     end
 
-    %% 第三欄
-    subgraph col3[ ]
-        A9[9]
-        A10[10]
-        A11[11]
-        A12[12]
+    %% 第三排
+    subgraph row3[ ]
+        A9[9] --- A10[10] --- A11[11] --- A12[12]
     end
 
-    %% 橫向連線
+    %% 垂直連線（每欄）
     A1 --- A5 --- A9
     A2 --- A6 --- A10
     A3 --- A7 --- A11

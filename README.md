@@ -71,7 +71,7 @@ graph LR
     end
 
    %% 第四欄
-    subgraph col3[ ]
+    subgraph col4[ ]
         A10[4]
         A11[8]
         A12[12]

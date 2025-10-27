@@ -86,7 +86,8 @@ graph LR
     A2 --- A5 --- A8 --- A11
     A3 --- A6 --- A9 --- A12
 
-
+    %% 垂直線用 class 背景
+    class col1 col2 col3 col4;
 
 
 ```

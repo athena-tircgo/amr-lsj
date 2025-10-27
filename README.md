@@ -48,17 +48,36 @@ flowchart TD
 
 
 ```mermaid
+---
+config:
+  layout: grid
+---
 graph TD
-    %% 先定義橫向連線（每一排）
-    A1[1] --- A2[2] --- A3[3] --- A4[4]
-    A5[5] --- A6[6] --- A7[7] --- A8[8]
-    A9[9] --- A10[10] --- A11[11] --- A12[12]
+    A1[1]:::node
+    A2[2]:::node
+    A3[3]:::node
+    A4[4]:::node
+    A5[5]:::node
+    A6[6]:::node
+    A7[7]:::node
+    A8[8]:::node
+    A9[9]:::node
+    A10[10]:::node
+    A11[11]:::node
+    A12[12]:::node
 
-    %% 再加垂直連線
+    %% 橫向連線
+    A1 --- A2 --- A3 --- A4
+    A5 --- A6 --- A7 --- A8
+    A9 --- A10 --- A11 --- A12
+
+    %% 垂直連線
     A1 --- A5 --- A9
     A2 --- A6 --- A10
     A3 --- A7 --- A11
     A4 --- A8 --- A12
+
+classDef node fill:#fdfdfd,stroke:#555,stroke-width:1px;
 ```
 
 

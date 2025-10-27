@@ -50,7 +50,7 @@ flowchart TD
 ```mermaid
 graph LR
     %% 樣式設定
-    classDef node fill:#fff,stroke:#555,stroke-width:1px,rx:5,ry:5;
+    classDef node fill:none,stroke:#aaa,stroke-width:1px,rx:5,ry:5;
 
     %% 第一欄
     subgraph col1[ ]

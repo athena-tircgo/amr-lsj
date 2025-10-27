@@ -48,10 +48,6 @@ flowchart TD
 
 
 ```mermaid
----
-config:
-  layout: grid
-```mermaid
 flowchart TD
     %% 定義節點
     A1([1]) --- A2([2]) --- A3([3]) --- A4([4])

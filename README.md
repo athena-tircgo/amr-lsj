@@ -48,51 +48,11 @@ flowchart TD
 
 ### 2.1 場域配置圖
 
-本場域共設置有12個工作站點以及一個充電站點，如下示意圖所示。<br>
+本場域共設置有12個工作站點以及一個充電站點，請參考附圖1所示。<br>
 站點 1、5、9 為包裝區，同時也是AMR 的待命區，其餘點位為撿貨區站點。0 為充電站 。
 
 <br>
 
-```mermaid
-graph LR
-    %% 樣式設定
-    classDef node fill:#fff,stroke:#555,stroke-width:1px,rx:5,ry:5;
-
-    %% 第一欄
-    subgraph col1[ ]
-        A1[1]:::node
-        A2[5]:::node
-        A3[9]:::node
-    end
-
-    %% 第二欄
-    subgraph col2[ ]
-        A4[2]:::node
-        A5[6]:::node
-        A6[10]:::node
-    end
-
-    %% 第三欄
-    subgraph col3[ ]
-        A7[3]:::node
-        A8[7]:::node
-        A9[11]:::node
-    end
-
-    %% 第四欄
-    subgraph col4[ ]
-        A10[4]:::node
-        A11[8]:::node
-        A12[12]:::node
-        A13[0]:::node
-    end
-
-    %% 橫向連線
-    A1 --- A4 --- A7 --- A10
-    A2 --- A5 --- A8 --- A11
-    A3 --- A6 --- A9 --- A12
-
-```
 
 ### 2.2 運行規劃
 

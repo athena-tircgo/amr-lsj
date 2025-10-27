@@ -48,22 +48,37 @@ flowchart TD
 
 
 ```mermaid
-flowchart TD
-    %% 定義節點
-    A1([1]) --- A2([2]) --- A3([3]) --- A4([4])
-    A5([5]) --- A6([6]) --- A7([7]) --- A8([8])
-    A9([9]) --- A10([10]) --- A11([11]) --- A12([12])
+graph LR
+    %% 第一欄
+    subgraph col1[ ]
+        A1[1]
+        A2[2]
+        A3[3]
+        A4[4]
+    end
 
-    %% 垂直連線
+    %% 第二欄
+    subgraph col2[ ]
+        A5[5]
+        A6[6]
+        A7[7]
+        A8[8]
+    end
+
+    %% 第三欄
+    subgraph col3[ ]
+        A9[9]
+        A10[10]
+        A11[11]
+        A12[12]
+    end
+
+    %% 橫向連線
     A1 --- A5 --- A9
     A2 --- A6 --- A10
     A3 --- A7 --- A11
     A4 --- A8 --- A12
-
-    %% 固定 layout 提示（這是關鍵）
-    linkStyle default interpolate basis
 ```
-
 
 2.1 本場域共設置有12個工作站點以及一個充電站點。
 2.2 共有4台AMR 會在本廠域內運行，正常模式下，3台AMR 在工作區，1台AMR 在充電區待命。

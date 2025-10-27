@@ -89,7 +89,6 @@ graph LR
     %% 垂直線用 class 背景
     class col1 col2 col3 col4;
 
-
 ```
 
 2.1 本場域共設置有12個工作站點以及一個充電站點。

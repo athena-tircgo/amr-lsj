@@ -49,32 +49,35 @@ flowchart TD
 
 ```mermaid
 graph LR
+    %% 樣式設定
+    classDef node fill:#fff,stroke:#555,stroke-width:1px,rx:5,ry:5;
+
     %% 第一欄
     subgraph col1[ ]
-        A1[1]
-        A2[5]
-        A3[9]
+        A1[1]:::node
+        A2[5]:::node
+        A3[9]:::node
     end
 
     %% 第二欄
     subgraph col2[ ]
-        A4[2]
-        A5[6]
-        A6[10]
+        A4[2]:::node
+        A5[6]:::node
+        A6[10]:::node
     end
 
     %% 第三欄
     subgraph col3[ ]
-        A7[3]
-        A8[7]
-        A9[11]
+        A7[3]:::node
+        A8[7]:::node
+        A9[11]:::node
     end
 
-   %% 第四欄
+    %% 第四欄
     subgraph col4[ ]
-        A10[4]
-        A11[8]
-        A12[12]
+        A10[4]:::node
+        A11[8]:::node
+        A12[12]:::node
     end
 
     %% 橫向連線

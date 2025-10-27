@@ -12,13 +12,11 @@
 
 <br>
 <br>
-  - **WMS Server：** 倉儲管理系統伺服器。
-  - **PTS Client：** 規劃與運輸系統端。
+
+**WMS Server：** 倉儲管理系統伺服器。
+**PTS Client：** 規劃與運輸系統端。
 
   - **系統架構圖：**
-
-<br>
-<br>
 
 ```mermaid
 flowchart TD
